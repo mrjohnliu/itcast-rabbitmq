@@ -6,7 +6,7 @@ import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
 
 public class Send {
-
+//this is dev
     private final static String EXCHANGE_NAME = "test_exchange_fanout";
 
     public static void main(String[] argv) throws Exception {
