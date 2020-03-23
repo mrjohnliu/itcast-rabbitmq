@@ -13,4 +13,11 @@ pipeline {
          }
       }
    }
+   post {
+  always {
+    emailext body: '${FILE,path="email.html"}', 
+	subject: '${DEFAULT_SUBJECT}-${PROJECT_DEFAULT_SUBJECT}-${BUILD_STATUS}', 
+	to: '1262463606@qq.com'
+  }
+}
 }
